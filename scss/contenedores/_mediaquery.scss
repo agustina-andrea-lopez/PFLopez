@@ -1,0 +1,106 @@
+/*md*/
+
+@media (max-width: 600px) {
+
+    /* estilos de home*/
+ 
+    body{
+        main{
+            .contenedor-uno{
+               height: 10rem;  
+               img{
+                 height: 10rem;                
+                }    
+            }    
+            .contenedor-dos{
+                height: 80%;
+                width: 80%;
+                margin-bottom: 2rem;                
+             }            
+        }        
+    }
+ 
+ 
+    /* estilos de about*/
+
+    body{
+        main{ 
+            .banner-about {    
+                @include flex-column;
+                padding: 2rem;            
+            }        
+            
+            .years{
+                .contenedor-about{      
+                    @include flex-column;
+                }                
+            }       
+            .tools{ 
+                .logos{
+                    @include flex-column;
+                }
+
+            }
+        }
+    }
+            
+ 
+    /* estilos de services*/
+     
+    body{
+        main{
+            .contenedor-services {    
+                @include flex-column;
+                height: 100%;            
+            }      
+        
+        }
+    } 
+}
+
+
+@media (max-width: 800px){
+
+ /* estilos de projects*/
+
+ body{
+    main{
+       .banner-projects{      
+            margin: 10%;           
+           .imagen-projects{
+            display: none;
+           }        
+        }
+        .cards{
+            .card{
+               margin: 0% 25%;               
+            }
+        }
+
+    }
+}
+
+
+/*estilos de services*/
+
+body{
+    main{
+        .banner-services {    
+            display: inline-block;
+            margin:25%;
+            }        
+        }
+    }
+
+ 
+ /* estilos de contact*/
+
+ body{
+    .container{
+        .img-contacto{            
+            display: none;           
+        }
+    }
+ }
+
+}
